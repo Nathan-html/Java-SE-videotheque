@@ -37,4 +37,12 @@ public class Director {
 	public void setBirthAt(LocalDateTime birthAt) {
 		this.birthAt = birthAt;
 	}
+	
+    @Override
+    public String toString() {
+        return  "{firstName=" + firstName +
+        		", lastName=" + lastName +
+        		", birthAt=" + birthAt +
+        		"}";
+    }
 }

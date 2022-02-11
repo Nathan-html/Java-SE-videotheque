@@ -1,4 +1,4 @@
-package fr.nathan.videotheque.services.actions;
+package fr.nathan.videotheque.services.menu;
 
 public enum VideothequeMenu implements ServiceMenu {
 	

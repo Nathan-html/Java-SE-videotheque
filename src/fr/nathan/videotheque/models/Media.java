@@ -11,4 +11,9 @@ public abstract class Media {
 	public String getTitle() {
 		return title;
 	}
+	
+	public String superToString() {
+		return "{title=" + title + "}";
+		
+	}
 }

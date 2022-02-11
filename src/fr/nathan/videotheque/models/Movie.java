@@ -8,11 +8,11 @@ public class Movie extends Media{
 	private Director director;
 	private Boolean wasViewed;
 	
-	public Movie(String title, LocalDate releaseDate, Director director, Boolean wasViewed) {
+	public Movie(String title, LocalDate releaseDate, Director director) {
 		super(title);
 		this.releaseDate = releaseDate;
 		this.director = director;
-		this.setWasViewed(wasViewed);
+		this.setWasViewed(false);
 	}
 
 	public LocalDate getReleaseDate() {
@@ -38,4 +38,13 @@ public class Movie extends Media{
 	public void setWasViewed(Boolean wasViewed) {
 		this.wasViewed = wasViewed;
 	}
+	
+    @Override
+    public String toString() {
+        return  this.superToString().substring(0, this.superToString().length() - 1) +
+                ", releaseDate=" + releaseDate +
+                ", director" + director +
+                ", wasViewed" + wasViewed +
+                '}';
+    }
 }

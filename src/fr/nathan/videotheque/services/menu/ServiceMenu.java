@@ -1,4 +1,4 @@
-package fr.nathan.videotheque.services.actions;
+package fr.nathan.videotheque.services.menu;
 
 public interface ServiceMenu {
 	String getValue();
