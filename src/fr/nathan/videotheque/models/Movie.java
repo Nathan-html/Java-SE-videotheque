@@ -43,8 +43,8 @@ public class Movie extends Media{
     public String toString() {
         return  this.superToString().substring(0, this.superToString().length() - 1) +
                 ", releaseDate=" + releaseDate +
-                ", director" + director +
-                ", wasViewed" + wasViewed +
+                ", director=" + director +
+                ", wasViewed=" + wasViewed +
                 '}';
     }
 }

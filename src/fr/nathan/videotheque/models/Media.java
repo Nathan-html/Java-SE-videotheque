@@ -7,13 +7,17 @@ public abstract class Media {
 	public Media(String title) {
 		this.title = title;
 	}
-
-	public String getTitle() {
-		return title;
-	}
 	
 	public String superToString() {
 		return "{title=" + title + "}";
 		
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 }
